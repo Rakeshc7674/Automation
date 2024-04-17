@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20240417 10:56:37.247" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase">
+<suite id="s1-s1" name="Radiobutton" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase\radiobutton.robot">
+<test id="s1-s1-t1" name="clickingradiobuttons" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${baseurl}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240417 10:56:38.725" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20240417 10:56:38.723" endtime="20240417 10:56:49.486"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240417 10:56:49.489" endtime="20240417 10:56:53.793"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240417 10:56:53.793" endtime="20240417 10:56:53.795"/>
+</kw>
+<kw name="Select Radio Button" library="SeleniumLibrary">
+<arg>pollanswers-1</arg>
+<arg>2</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<msg timestamp="20240417 10:56:53.796" level="INFO">Selecting '2' from radio button 'pollanswers-1'.</msg>
+<status status="PASS" starttime="20240417 10:56:53.795" endtime="20240417 10:57:00.818"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240417 10:57:10.820" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20240417 10:57:00.819" endtime="20240417 10:57:10.820"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20240417 10:57:10.822" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
+<status status="PASS" starttime="20240417 10:57:10.821" endtime="20240417 10:57:21.113"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>RememberMe</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20240417 10:57:21.113" level="INFO">Selecting checkbox 'RememberMe'.</msg>
+<status status="PASS" starttime="20240417 10:57:21.113" endtime="20240417 10:57:29.936"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240417 10:57:34.949" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240417 10:57:29.939" endtime="20240417 10:57:34.949"/>
+</kw>
+<status status="PASS" starttime="20240417 10:56:38.721" endtime="20240417 10:57:34.949"/>
+</test>
+<status status="PASS" starttime="20240417 10:56:37.404" endtime="20240417 10:57:34.950"/>
+</suite>
+<status status="PASS" starttime="20240417 10:56:37.284" endtime="20240417 10:57:34.957"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Radiobutton">Testcase.Radiobutton</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240417 10:56:37.276" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv\Scripts\robot.exe
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv\Lib\site-packages</msg>
+</errors>
+</robot>

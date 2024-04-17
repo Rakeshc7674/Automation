@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20240417 10:55:25.930" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase">
+<suite id="s1-s1" name="Capture" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase\capture.robot">
+<test id="s1-s1-t1" name="capturingscreenshots" line="5">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240417 10:55:27.511" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com'.</msg>
+<status status="PASS" starttime="20240417 10:55:27.511" endtime="20240417 10:55:51.399"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240417 10:55:51.408" endtime="20240417 10:56:14.546"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240417 10:56:19.548" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240417 10:56:14.546" endtime="20240417 10:56:19.548"/>
+</kw>
+<kw name="Capture Element Screenshot" library="SeleniumLibrary">
+<arg>xpath://IMG[@alt='company-branding']</arg>
+<arg>login.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<msg timestamp="20240417 10:56:20.038" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20240417 10:56:20.038" level="FAIL">Element with locator 'xpath://IMG[@alt='company-branding']' not found.</msg>
+<status status="FAIL" starttime="20240417 10:56:19.548" endtime="20240417 10:56:20.105"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>loginTc.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20240417 10:56:20.105" endtime="20240417 10:56:20.105"/>
+</kw>
+<status status="FAIL" starttime="20240417 10:55:27.508" endtime="20240417 10:56:20.105">Element with locator 'xpath://IMG[@alt='company-branding']' not found.</status>
+</test>
+<status status="FAIL" starttime="20240417 10:55:26.034" endtime="20240417 10:56:20.109"/>
+</suite>
+<status status="FAIL" starttime="20240417 10:55:25.938" endtime="20240417 10:56:20.111"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Capture">Testcase.Capture</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240417 10:55:25.930" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv\Scripts\robot.exe
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv\Lib\site-packages</msg>
+</errors>
+</robot>

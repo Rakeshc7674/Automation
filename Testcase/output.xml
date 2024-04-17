@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20240224 14:06:31.390" rpa="false" schemaversion="4">
+<suite id="s1" name="Alert" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase\alert.robot">
+<test id="s1-t1" name="alerts" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240224 14:06:31.546" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<status status="PASS" starttime="20240224 14:06:31.546" endtime="20240224 14:06:39.072"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240224 14:06:39.073" endtime="20240224 14:06:39.188"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//button[text()='Alert']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240224 14:06:39.188" level="INFO">Clicking element '//button[text()='Alert']'.</msg>
+<status status="PASS" starttime="20240224 14:06:39.188" endtime="20240224 14:06:39.301"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240224 14:06:44.301" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240224 14:06:39.301" endtime="20240224 14:06:44.301"/>
+</kw>
+<kw name="Handle Alert" library="SeleniumLibrary">
+<arg>leave</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<msg timestamp="20240224 14:06:44.301" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<status status="PASS" starttime="20240224 14:06:44.301" endtime="20240224 14:06:44.305"/>
+</kw>
+<status status="PASS" starttime="20240224 14:06:31.546" endtime="20240224 14:06:44.306"/>
+</test>
+<status status="PASS" starttime="20240224 14:06:31.390" endtime="20240224 14:06:44.308"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Alert">Alert</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20240417 10:56:37.363" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase">
+<suite id="s1-s1" name="Rc1" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase\rc1.robot">
+<test id="s1-s1-t1" name="LoginTest" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${baseurl}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240417 10:56:38.782" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20240417 10:56:38.779" endtime="20240417 10:56:50.359"/>
+</kw>
+<kw name="LogintoApplication">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240417 10:56:50.359" endtime="20240417 10:56:53.861"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20240417 10:56:53.861" endtime="20240417 10:56:53.874"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20240417 10:56:53.879" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
+<status status="PASS" starttime="20240417 10:56:53.877" endtime="20240417 10:56:58.760"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:customerCurrency</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240417 10:56:58.763" level="INFO">Clicking element 'id:customerCurrency'.</msg>
+<status status="PASS" starttime="20240417 10:56:58.760" endtime="20240417 10:56:59.532"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id:customerCurrency</arg>
+<arg>Euro</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20240417 10:56:59.534" level="INFO">Selecting options from selection list 'id:customerCurrency' by label Euro.</msg>
+<status status="PASS" starttime="20240417 10:56:59.532" endtime="20240417 10:57:02.499"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Email</arg>
+<arg>pavanoltraining@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240417 10:57:02.504" level="INFO">Typing text 'pavanoltraining@gmail.com' into text field 'id:Email'.</msg>
+<status status="PASS" starttime="20240417 10:57:02.499" endtime="20240417 10:57:03.423"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:Password</arg>
+<arg>Test@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240417 10:57:03.425" level="INFO">Typing text 'Test@123' into text field 'id:Password'.</msg>
+<status status="PASS" starttime="20240417 10:57:03.423" endtime="20240417 10:57:03.881"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@class='button-1 login-button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240417 10:57:03.883" level="INFO">Clicking element 'xpath://button[@class='button-1 login-button']'.</msg>
+<status status="PASS" starttime="20240417 10:57:03.881" endtime="20240417 10:57:05.452"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='RememberMe']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240417 10:57:05.457" level="INFO">Clicking element 'xpath://input[@id='RememberMe']'.</msg>
+<status status="PASS" starttime="20240417 10:57:05.452" endtime="20240417 10:57:05.896"/>
+</kw>
+<status status="PASS" starttime="20240417 10:56:50.359" endtime="20240417 10:57:05.896"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240417 10:57:15.914" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20240417 10:57:05.896" endtime="20240417 10:57:15.914"/>
+</kw>
+<status status="PASS" starttime="20240417 10:56:38.778" endtime="20240417 10:57:15.914"/>
+</test>
+<status status="PASS" starttime="20240417 10:56:37.512" endtime="20240417 10:57:15.918"/>
+</suite>
+<status status="PASS" starttime="20240417 10:56:37.383" endtime="20240417 10:57:15.921"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Rc1">Testcase.Rc1</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240417 10:56:37.376" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv\Scripts\robot.exe
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv\Lib\site-packages</msg>
+</errors>
+</robot>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20240417 10:55:25.930" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase">
+<suite id="s1-s1" name="Framesdemo" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase\framesdemo.robot">
+<test id="s1-s1-t1" name="framestest" line="10">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240417 10:55:27.453" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<status status="PASS" starttime="20240417 10:55:27.452" endtime="20240417 10:56:27.463"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240417 10:56:27.463" endtime="20240417 10:56:27.917"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240417 10:56:27.917" endtime="20240417 10:56:27.923"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>frame-one796456169</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20240417 10:56:27.928" level="INFO">Selecting frame 'frame-one796456169'.</msg>
+<status status="PASS" starttime="20240417 10:56:27.923" endtime="20240417 10:56:32.718"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath://input[@id='RESULT_TextField-0']</arg>
+<arg>ramesh</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240417 10:56:32.729" level="INFO">Typing text 'ramesh' into text field 'xpath://input[@id='RESULT_TextField-0']'.</msg>
+<status status="PASS" starttime="20240417 10:56:32.720" endtime="20240417 10:56:40.168"/>
+</kw>
+<kw name="Unselect Frame" library="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" starttime="20240417 10:56:40.168" endtime="20240417 10:56:42.722"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://input[@id="datepicker"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240417 10:56:42.723" level="INFO">Clicking element 'xpath://input[@id="datepicker"]'.</msg>
+<status status="PASS" starttime="20240417 10:56:42.722" endtime="20240417 10:56:48.823"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://span[@class="ui-icon ui-icon-circle-triangle-w"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240417 10:56:48.826" level="INFO">Clicking element 'xpath://span[@class="ui-icon ui-icon-circle-triangle-w"]'.</msg>
+<status status="PASS" starttime="20240417 10:56:48.823" endtime="20240417 10:56:53.438"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:(//a[@class="ui-state-default"])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240417 10:56:53.446" level="INFO">Clicking element 'xpath:(//a[@class="ui-state-default"])[1]'.</msg>
+<status status="PASS" starttime="20240417 10:56:53.441" endtime="20240417 10:56:58.495"/>
+</kw>
+<status status="PASS" starttime="20240417 10:55:27.449" endtime="20240417 10:56:58.495"/>
+</test>
+<status status="PASS" starttime="20240417 10:55:26.034" endtime="20240417 10:56:58.501"/>
+</suite>
+<status status="PASS" starttime="20240417 10:55:25.939" endtime="20240417 10:56:58.521"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Framesdemo">Testcase.Framesdemo</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240417 10:55:25.930" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv\Scripts\robot.exe
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv\Lib\site-packages</msg>
+</errors>
+</robot>

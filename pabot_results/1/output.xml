@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20240417 10:55:25.930" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase">
+<suite id="s1-s1" name="Arguments" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase\arguments.robot">
+<test id="s1-s1-t1" name="Argumentsandreturninto" line="12">
+<kw name="loginto" library="resource">
+<var>${pagetitle}</var>
+<arg>${url}</arg>
+<arg>${baseurl}</arg>
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${appurl}</arg>
+<arg>${appbrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240417 10:55:27.538" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<status status="PASS" starttime="20240417 10:55:27.536" endtime="20240417 10:55:51.888"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240417 10:55:51.888" endtime="20240417 10:56:25.643"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<msg timestamp="20240417 10:56:25.771" level="INFO">${title} = Automation Testing Practice</msg>
+<status status="PASS" starttime="20240417 10:56:25.643" endtime="20240417 10:56:25.772"/>
+</kw>
+<msg timestamp="20240417 10:56:25.772" level="INFO">${pagetitle} = Automation Testing Practice</msg>
+<status status="PASS" starttime="20240417 10:55:27.536" endtime="20240417 10:56:25.772"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${pagetitle}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240417 10:56:25.772" endtime="20240417 10:56:25.772"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${pagetitle}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240417 10:56:25.777" level="INFO">Automation Testing Practice</msg>
+<status status="PASS" starttime="20240417 10:56:25.775" endtime="20240417 10:56:25.777"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:name</arg>
+<arg>Rakeshc</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240417 10:56:25.780" level="INFO">Typing text 'Rakeshc' into text field 'id:name'.</msg>
+<status status="PASS" starttime="20240417 10:56:25.777" endtime="20240417 10:56:27.268"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:email</arg>
+<arg>rakeshchandrasekhar74@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240417 10:56:27.270" level="INFO">Typing text 'rakeshchandrasekhar74@gmail.com' into text field 'id:email'.</msg>
+<status status="PASS" starttime="20240417 10:56:27.268" endtime="20240417 10:56:28.831"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:phone</arg>
+<arg>8217770612</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240417 10:56:28.831" level="INFO">Typing text '8217770612' into text field 'id:phone'.</msg>
+<status status="PASS" starttime="20240417 10:56:28.831" endtime="20240417 10:56:29.879"/>
+</kw>
+<status status="PASS" starttime="20240417 10:55:27.533" endtime="20240417 10:56:29.879"/>
+</test>
+<status status="PASS" starttime="20240417 10:55:26.034" endtime="20240417 10:56:29.881"/>
+</suite>
+<status status="PASS" starttime="20240417 10:55:25.930" endtime="20240417 10:56:29.883"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Arguments">Testcase.Arguments</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240417 10:55:25.930" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv\Scripts\robot.exe
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv\Lib\site-packages</msg>
+</errors>
+</robot>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20240417 10:55:25.930" rpa="false" schemaversion="4">
+<suite id="s1" name="Testcase" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase">
+<suite id="s1-s1" name="Handledropdown" source="C:\Users\Admin\PycharmProjects\pythonProject\Automation\Testcase\handledropdown.robot">
+<test id="s1-s1-t1" name="handledropdowns" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${baseurl}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240417 10:55:27.501" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com/'.</msg>
+<status status="PASS" starttime="20240417 10:55:27.501" endtime="20240417 10:55:57.327"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240417 10:55:57.328" endtime="20240417 10:55:58.814"/>
+</kw>
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20240417 10:55:58.814" endtime="20240417 10:55:58.815"/>
+</kw>
+<kw name="Select From List By Index" library="SeleniumLibrary">
+<arg>id:customerCurrency</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<msg timestamp="20240417 10:55:58.819" level="INFO">Selecting options from selection list 'id:customerCurrency' by index 1.</msg>
+<status status="PASS" starttime="20240417 10:55:58.815" endtime="20240417 10:56:32.501"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id:customerCurrency</arg>
+<arg>US Dollar</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20240417 10:56:32.506" level="INFO">Selecting options from selection list 'id:customerCurrency' by label US Dollar.</msg>
+<status status="PASS" starttime="20240417 10:56:32.501" endtime="20240417 10:56:55.180"/>
+</kw>
+<status status="PASS" starttime="20240417 10:55:27.501" endtime="20240417 10:56:55.180"/>
+</test>
+<status status="PASS" starttime="20240417 10:55:26.034" endtime="20240417 10:56:55.183"/>
+</suite>
+<status status="PASS" starttime="20240417 10:55:25.940" endtime="20240417 10:56:55.184"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testcase">Testcase</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Handledropdown">Testcase.Handledropdown</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240417 10:55:25.938" level="ERROR">Taking listener 'RobotStackTracer' into use failed: Importing listener 'RobotStackTracer' failed: ModuleNotFoundError: No module named 'RobotStackTracer'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv\Scripts\robot.exe
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\python311.zip
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\DLLs
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib
+  C:\Users\Admin\AppData\Local\Programs\Python\Python311
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv
+  C:\Users\Admin\PycharmProjects\pythonProject\Automation\venv\Lib\site-packages</msg>
+</errors>
+</robot>

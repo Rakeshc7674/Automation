@@ -1,0 +1,23 @@
+datasources:ed01211cb0fe481a5d92c983428e6e2ee5b1b7da
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:ce1383183af467b7aaf3f1d48181e2e5802711e5
+--suite Testcase.Alert
+--suite Testcase.Arguments
+--suite Testcase.Capture
+--suite Testcase.Closebrowser
+--suite Testcase.Date
+--suite Testcase.Framesdemo
+--suite Testcase.Getalllinks
+--suite Testcase.Handledropdown
+--suite Testcase.Input
+--suite Testcase.Multibrowsersswicthing
+--suite Testcase.Navigate
+--suite Testcase.Radiobutton
+--suite Testcase.Rc1
+--suite Testcase.Tabbedwindow
+--suite Testcase.Tabledemo
+--suite Testcase.Tc1
+--suite Testcase.Waittest
+--suite Testcase.fileloopDemo
+--suite Testcase.mouseActions

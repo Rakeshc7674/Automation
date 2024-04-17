@@ -1,0 +1,100 @@
+==============================================================================
+Testcase                                                                      
+==============================================================================
+Testcase.Getalllinks                                                          
+==============================================================================
+Getalllinks                                                           86
+Register
+Log in
+Wishlist (0)
+Shopping cart (0)
+
+Computers
+
+
+
+Electronics
+
+
+
+Apparel
+
+
+
+Digital downloads
+Books
+Jewelry
+Gift Cards
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1
+2
+Documentation
+Forums
+nopCommerce.com
+Electronics
+
+Apparel
+
+Digital downloads
+
+
+Build your own computer
+
+Apple MacBook Pro 13-inch
+
+HTC One M8 Android L 5.0 Lollipop
+
+$25 Virtual Gift Card
+New online store is open!
+DETAILS
+nopCommerce new release!
+DETAILS
+About nopCommerce
+DETAILS
+View News Archive
+Sitemap
+Shipping & returns
+Privacy notice
+Conditions of Use
+About us
+Contact us
+Search
+News
+Blog
+Recently viewed products
+Compare products list
+New products
+My account
+Orders
+Addresses
+Shopping cart
+Wishlist
+Apply for vendor account
+| PASS |
+------------------------------------------------------------------------------
+Testcase.Getalllinks                                                  | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Testcase                                                              | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\Users\Admin\PycharmProjects\pythonProject\Automation\pabot_results\6\output.xml
